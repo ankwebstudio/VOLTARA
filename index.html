@@ -2090,6 +2090,57 @@
         }
 
 
+
+        /* =========================================================
+           EXPANDED B2B EXPERIENCE
+        ========================================================== */
+        .section-heading.centered{max-width:760px;margin-left:auto;margin-right:auto;text-align:center}
+        .section-heading.centered p{margin-left:auto;margin-right:auto}
+        .mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+        .mini-card{background:#fff;border:1px solid var(--border);border-radius:18px;padding:22px;transition:.3s ease}
+        .mini-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+        .mini-card .icon{width:44px;height:44px;border-radius:13px;background:var(--blue-light);color:var(--blue);display:grid;place-items:center;margin-bottom:16px}
+        .mini-card h4{font-family:"Manrope",sans-serif;margin-bottom:7px}
+        .mini-card p{font-size:13px;color:var(--muted)}
+        .product-showcase{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+        .product-card{border:1px solid var(--border);border-radius:20px;background:#fff;overflow:hidden;transition:.3s ease}
+        .product-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-hover)}
+        .product-card-top{padding:24px 24px 10px;display:flex;justify-content:space-between;gap:15px;align-items:flex-start}
+        .product-icon{width:48px;height:48px;border-radius:14px;background:var(--blue-light);color:var(--blue);display:grid;place-items:center;font-size:20px}
+        .product-badge{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#3b82f6;background:#eff6ff;padding:7px 9px;border-radius:999px}
+        .product-card h3{font-family:"Manrope",sans-serif;font-size:20px;padding:0 24px;margin:8px 0}
+        .product-card p{font-size:13px;color:var(--muted);padding:0 24px;min-height:44px}
+        .product-meta{display:flex;flex-wrap:wrap;gap:8px;padding:18px 24px}
+        .product-meta span{font-size:11px;color:#475467;border:1px solid var(--border);padding:6px 8px;border-radius:8px}
+        .product-action{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border);padding:16px 24px;font-size:13px;font-weight:700}
+        .product-action a{color:var(--blue)}
+        .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:process}
+        .process-card{position:relative;padding:28px 22px;border:1px solid var(--border);border-radius:18px;background:#fff}
+        .process-no{font-family:"Manrope",sans-serif;font-size:12px;font-weight:800;color:var(--blue);letter-spacing:.1em;margin-bottom:28px}
+        .process-card h3{font-family:"Manrope",sans-serif;font-size:18px;margin-bottom:8px}
+        .process-card p{font-size:13px;color:var(--muted)}
+        .b2b{background:#f8fbff}
+        .b2b-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+        .b2b-copy h2{font-family:"Manrope",sans-serif;font-size:clamp(36px,5vw,56px);line-height:1.08;letter-spacing:-.045em}
+        .b2b-copy>p{color:var(--muted);margin-top:20px;max-width:600px}
+        .b2b-list{display:grid;gap:12px;margin-top:28px}
+        .b2b-list div{display:flex;gap:12px;align-items:flex-start;font-size:14px}
+        .b2b-list i{color:var(--blue);margin-top:4px}
+        .enquiry-panel{background:var(--navy);border-radius:24px;padding:32px;color:#fff;box-shadow:var(--shadow)}
+        .enquiry-panel h3{font-family:"Manrope",sans-serif;font-size:24px;margin-bottom:10px}
+        .enquiry-panel p{color:#aab8ca;font-size:13px;margin-bottom:24px}
+        .enquiry-links{display:grid;gap:10px}
+        .enquiry-link{display:flex;align-items:center;gap:12px;padding:14px 16px;border:1px solid rgba(255,255,255,.1);border-radius:12px;color:#eaf1fb;font-size:13px}
+        .enquiry-link i{color:#69aaff}
+        .coverage{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+        .coverage-card{padding:25px;border:1px solid var(--border);border-radius:18px;background:#fff}
+        .coverage-card i{color:var(--blue);font-size:22px;margin-bottom:15px}
+        .coverage-card h3{font-family:"Manrope",sans-serif;font-size:18px;margin-bottom:7px}
+        .coverage-card p{font-size:13px;color:var(--muted)}
+        .notice{font-size:11px;color:#98a2b3;margin-top:18px}
+        @media(max-width:1050px){.product-showcase{grid-template-columns:repeat(2,1fr)}.process-grid{grid-template-columns:repeat(2,1fr)}.b2b-layout{grid-template-columns:1fr}.coverage{grid-template-columns:repeat(2,1fr)}.mini-grid{grid-template-columns:1fr 1fr}}
+        @media(max-width:760px){.product-showcase,.process-grid,.coverage,.mini-grid{grid-template-columns:1fr}}
+
         /* =========================================================
            RESPONSIVE
         ========================================================== */
@@ -2527,8 +2578,16 @@
                 Brands
             </a>
 
+            <a href="#products">
+                Products
+            </a>
+
             <a href="#solutions">
                 Solutions
+            </a>
+
+            <a href="#wholesale">
+                Wholesale
             </a>
 
             <a href="#about">
@@ -2767,526 +2826,63 @@
 <!-- =========================================================
      PRODUCTS
 ========================================================== -->
-
-<section class="section categories"
-         id="products">
-
-    <div class="container">
-
-
-        <div class="section-heading reveal">
-
-            <div class="eyebrow">
-                Product Range
-            </div>
-
-
-            <h2>
-                Components built around
-                the way you work.
-            </h2>
-
-
-            <p>
-
-                Explore essential mobile parts
-                and repair components designed
-                for technicians, service centres,
-                retailers and professional buyers.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="category-grid">
-
-
-            <!-- DISPLAY -->
-
-            <a href="#request"
-               class="category-card reveal">
-
-                <div class="category-image">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=900&q=85"
-                        alt="Smartphone display"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-                <div class="category-content">
-
-                    <div class="category-tag">
-
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-
-                    </div>
-
-                    <h3>
-                        Displays
-                    </h3>
-
-                    <p>
-                        Mobile display assemblies
-                        and screen components.
-                    </p>
-
-                </div>
-
-
-                <span class="category-arrow">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </span>
-
-            </a>
-
-
-
-            <!-- BATTERY -->
-
-            <a href="#request"
-               class="category-card reveal">
-
-                <div class="category-image">
-
-                    <img
-                        src="battery.jpg"
-                        alt="Mobile battery technology"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-                <div class="category-content">
-
-                    <div class="category-tag">
-
-                        <i class="fa-solid fa-battery-full"></i>
-
-                    </div>
-
-                    <h3>
-                        Batteries
-                    </h3>
-
-                    <p>
-                        Replacement batteries
-                        for popular device models.
-                    </p>
-
-                </div>
-
-
-                <span class="category-arrow">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </span>
-
-            </a>
-
-
-
-            <!-- CHARGING -->
-
-            <a href="#request"
-               class="category-card reveal">
-
-                <div class="category-image">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=900&q=85"
-                        alt="Mobile charging technology"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-                <div class="category-content">
-
-                    <div class="category-tag">
-
-                        <i class="fa-solid fa-plug"></i>
-
-                    </div>
-
-                    <h3>
-                        Charging Parts
-                    </h3>
-
-                    <p>
-                        Charging ports, flex cables
-                        and related components.
-                    </p>
-
-                </div>
-
-
-                <span class="category-arrow">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </span>
-
-            </a>
-
-
-
-            <!-- CAMERA -->
-
-            <a href="#request"
-               class="category-card reveal">
-
-                <div class="category-image">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=85"
-                        alt="Camera technology"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-                <div class="category-content">
-
-                    <div class="category-tag">
-
-                        <i class="fa-solid fa-camera"></i>
-
-                    </div>
-
-                    <h3>
-                        Cameras
-                    </h3>
-
-                    <p>
-                        Front, rear and camera-related
-                        replacement parts.
-                    </p>
-
-                </div>
-
-
-                <span class="category-arrow">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </span>
-
-            </a>
-
-
-
-            <!-- FLEX -->
-
-            <a href="#request"
-               class="category-card reveal">
-
-                <div class="category-image">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85"
-                        alt="Electronic circuit board"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-                <div class="category-content">
-
-                    <div class="category-tag">
-
-                        <i class="fa-solid fa-code-branch"></i>
-
-                    </div>
-
-                    <h3>
-                        Flex Cables
-                    </h3>
-
-                    <p>
-                        Professional-grade flex
-                        and connector components.
-                    </p>
-
-                </div>
-
-
-                <span class="category-arrow">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </span>
-
-            </a>
-
-
-
-            <!-- IC BOARD -->
-
-            <a href="#request"
-               class="category-card reveal">
-
-                <div class="category-image">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&w=900&q=85"
-                        alt="Electronic circuit board components"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-                <div class="category-content">
-
-                    <div class="category-tag">
-
-                        <i class="fa-solid fa-microchip"></i>
-
-                    </div>
-
-                    <h3>
-                        IC & Board Parts
-                    </h3>
-
-                    <p>
-                        Components for advanced
-                        board-level repair work.
-                    </p>
-
-                </div>
-
-
-                <span class="category-arrow">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </span>
-
-            </a>
-
-
-
-            <!-- BACK GLASS -->
-
-            <a href="#request"
-               class="category-card reveal">
-
-                <div class="category-image">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1592286927505-1def25115558?auto=format&fit=crop&w=900&q=85"
-                        alt="Smartphone back panel"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-                <div class="category-content">
-
-                    <div class="category-tag">
-
-                        <i class="fa-solid fa-layer-group"></i>
-
-                    </div>
-
-                    <h3>
-                        Back Glass
-                    </h3>
-
-                    <p>
-                        Replacement back glass
-                        and housing components.
-                    </p>
-
-                </div>
-
-
-                <span class="category-arrow">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </span>
-
-            </a>
-
-
-
-            <!-- TOOLS -->
-
-            <a href="#request"
-               class="category-card reveal">
-
-                <div class="category-image">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=900&q=85"
-                        alt="Professional electronics repair tools"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-                <div class="category-content">
-
-                    <div class="category-tag">
-
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
-
-                    </div>
-
-                    <h3>
-                        Tools & Accessories
-                    </h3>
-
-                    <p>
-                        Essential tools and accessories
-                        for repair professionals.
-                    </p>
-
-                </div>
-
-
-                <span class="category-arrow">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </span>
-
-            </a>
-
-
-        </div>
-
+<section class="section categories" id="products">
+  <div class="container">
+    <div class="section-heading centered reveal">
+      <div class="eyebrow">Product Range</div>
+      <h2>Parts organised around real repair requirements.</h2>
+      <p>From frequently replaced mobile components to specialist repair parts, VOLTARA is structured to make sourcing easier for professional buyers.</p>
     </div>
 
+    <div class="category-grid">
+      <a href="#request" class="category-card reveal"><div class="category-image"><img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=900&q=85" alt="Smartphone display" loading="lazy"></div><div class="category-content"><div class="category-tag"><i class="fa-solid fa-mobile-screen-button"></i></div><h3>Displays</h3><p>Mobile display assemblies and screen components.</p></div><span class="category-arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+      <a href="#request" class="category-card reveal"><div class="category-image"><img src="battery.jpg" alt="Mobile battery technology" loading="lazy"></div><div class="category-content"><div class="category-tag"><i class="fa-solid fa-battery-full"></i></div><h3>Batteries</h3><p>Replacement batteries for popular device models.</p></div><span class="category-arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+      <a href="#request" class="category-card reveal"><div class="category-image"><img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=900&q=85" alt="Mobile charging technology" loading="lazy"></div><div class="category-content"><div class="category-tag"><i class="fa-solid fa-plug"></i></div><h3>Charging Parts</h3><p>Charging ports, flex cables and related components.</p></div><span class="category-arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+      <a href="#request" class="category-card reveal"><div class="category-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=85" alt="Camera technology" loading="lazy"></div><div class="category-content"><div class="category-tag"><i class="fa-solid fa-camera"></i></div><h3>Cameras</h3><p>Front, rear and camera-related replacement parts.</p></div><span class="category-arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+      <a href="#request" class="category-card reveal"><div class="category-image"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85" alt="Electronic circuit board" loading="lazy"></div><div class="category-content"><div class="category-tag"><i class="fa-solid fa-code-branch"></i></div><h3>Flex Cables</h3><p>Professional-grade flex and connector components.</p></div><span class="category-arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+      <a href="#request" class="category-card reveal"><div class="category-image"><img src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&w=900&q=85" alt="Electronic circuit board components" loading="lazy"></div><div class="category-content"><div class="category-tag"><i class="fa-solid fa-microchip"></i></div><h3>IC &amp; Board Parts</h3><p>Components for advanced board-level repair work.</p></div><span class="category-arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+      <a href="#request" class="category-card reveal"><div class="category-image"><img src="https://images.unsplash.com/photo-1592286927505-1def25115558?auto=format&fit=crop&w=900&q=85" alt="Smartphone back panel" loading="lazy"></div><div class="category-content"><div class="category-tag"><i class="fa-solid fa-layer-group"></i></div><h3>Back Glass &amp; Housings</h3><p>Replacement back glass and housing components.</p></div><span class="category-arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+      <a href="#request" class="category-card reveal"><div class="category-image"><img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=900&q=85" alt="Professional electronics repair tools" loading="lazy"></div><div class="category-content"><div class="category-tag"><i class="fa-solid fa-screwdriver-wrench"></i></div><h3>Tools &amp; Accessories</h3><p>Essential tools and accessories for repair professionals.</p></div><span class="category-arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+    </div>
+
+    <p class="notice">Product availability, grades, MOQ and pricing can be confirmed per enquiry. No stock or pricing is assumed on this concept site.</p>
+
+    <div class="product-showcase" style="margin-top:35px">
+      <article class="product-card reveal"><div class="product-card-top"><div class="product-icon"><i class="fa-solid fa-mobile-screen"></i></div><span class="product-badge">Common Request</span></div><h3>Display Assemblies</h3><p>For technicians and repair centres sourcing replacement screens by exact model.</p><div class="product-meta"><span>Model-based</span><span>Grade on request</span><span>MOQ on request</span></div><div class="product-action"><span>Check availability</span><a href="#request">Enquire <i class="fa-solid fa-arrow-right"></i></a></div></article>
+      <article class="product-card reveal"><div class="product-card-top"><div class="product-icon"><i class="fa-solid fa-battery-full"></i></div><span class="product-badge">Service Part</span></div><h3>Replacement Batteries</h3><p>Battery requirements matched to device model and intended repair use.</p><div class="product-meta"><span>Exact model</span><span>Specification check</span><span>Bulk enquiry</span></div><div class="product-action"><span>Confirm requirement</span><a href="#request">Enquire <i class="fa-solid fa-arrow-right"></i></a></div></article>
+      <article class="product-card reveal"><div class="product-card-top"><div class="product-icon"><i class="fa-solid fa-microchip"></i></div><span class="product-badge">Specialist</span></div><h3>Board-Level Components</h3><p>For advanced repair requirements where component identification matters.</p><div class="product-meta"><span>Part identification</span><span>Technical enquiry</span><span>Bulk support</span></div><div class="product-action"><span>Discuss the part</span><a href="#request">Enquire <i class="fa-solid fa-arrow-right"></i></a></div></article>
+    </div>
+  </div>
 </section>
-
-
 
 <!-- =========================================================
      FIND YOUR PART
 ========================================================== -->
-
-<section class="section finder-section"
-         id="request">
-
-    <div class="container">
-
-
-        <div class="finder reveal">
-
-            <div class="finder-content">
-
-
-                <div class="finder-copy">
-
-                    <div class="eyebrow"
-                         style="color:#69aaff;">
-
-                        Find Your Part
-
-                    </div>
-
-
-                    <h2>
-                        Looking for
-                        something specific?
-                    </h2>
-
-
-                    <p>
-
-                        Tell us your device model
-                        and the part you need.
-                        Our team can help identify
-                        the right component for
-                        your requirement.
-
-                    </p>
-
-                </div>
-
-
-
-                <form class="finder-form"
-                      id="partForm">
-
-
-                    <div class="finder-form-row">
-
-                        <select required>
-
-                            <option value="">
-                                Select Brand
-                            </option>
-
-                            <option>
-                                Apple
-                            </option>
-
-                            <option>
-                                Samsung
-                            </option>
-
-                            <option>
-                                Xiaomi
-                            </option>
-
-                            <option>
-                                OPPO
-                            </option>
-
-                            <option>
-                                vivo
-                            </option>
-
-                            <option>
-                                OnePlus
-                            </option>
-
-                        </select>
-
-
-                        <input
-                            type="text"
-                            placeholder="Device model"
-                            required
-                        >
-
-                    </div>
-
-
-                    <input
-                        type="text"
-                        placeholder="Part required"
-                        required
-                    >
-
-
-                    <input
-                        type="text"
-                        placeholder="Quantity / requirement"
-                    >
-
-
-                    <button type="submit">
-
-                        Request Availability
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </button>
-
-                </form>
-
-            </div>
-
+<section class="section finder-section" id="request">
+  <div class="container">
+    <div class="finder reveal">
+      <div class="finder-content">
+        <div class="finder-copy">
+          <div class="eyebrow" style="color:#69aaff;">Part Finder &amp; Wholesale Enquiry</div>
+          <h2>Identify the part. Tell us the quantity. Start the conversation.</h2>
+          <p>Use the enquiry form for single requirements, repeat repair needs or wholesale requests. Share the exact device model so the required component can be checked before supply.</p>
+          <div class="mini-grid">
+            <div class="mini-card"><div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div><h4>Identify</h4><p>Brand, exact model and required part.</p></div>
+            <div class="mini-card"><div class="icon"><i class="fa-solid fa-boxes-stacked"></i></div><h4>Specify</h4><p>Quantity and any business requirement.</p></div>
+            <div class="mini-card"><div class="icon"><i class="fa-solid fa-comments"></i></div><h4>Confirm</h4><p>Discuss availability, grade and supply terms.</p></div>
+          </div>
         </div>
-
+        <form class="finder-form" id="partForm">
+          <div class="finder-form-row"><select id="brand" required><option value="">Select Brand</option><option>Apple</option><option>Samsung</option><option>Xiaomi</option><option>OPPO</option><option>vivo</option><option>OnePlus</option></select><input id="model" type="text" placeholder="Exact device model" required></div>
+          <div class="finder-form-row"><input id="part" type="text" placeholder="Part required (e.g. display, battery)" required><select id="grade"><option value="">Part grade / preference</option><option>OEM</option><option>Premium</option><option>Compatible</option><option>Not sure - advise me</option></select></div>
+          <div class="finder-form-row"><input id="quantity" type="text" placeholder="Quantity (e.g. 5 pcs)"><input id="business" type="text" placeholder="Business type (optional)"></div>
+          <button type="submit">Request Availability &amp; Quote <i class="fa-brands fa-whatsapp"></i></button>
+          <p class="notice" style="color:#91a0b5;margin:0">You will be redirected to WhatsApp to send the enquiry.</p>
+        </form>
+      </div>
     </div>
-
+  </div>
 </section>
-
-
 
 <!-- =========================================================
      SOLUTIONS
@@ -3467,6 +3063,46 @@
 </section>
 
 
+
+<!-- =========================================================
+     HOW IT WORKS
+========================================================== -->
+<section class="section" id="process">
+  <div class="container">
+    <div class="section-heading centered reveal"><div class="eyebrow">How It Works</div><h2>A practical sourcing flow for busy repair businesses.</h2><p>Keep the first step simple: tell VOLTARA exactly what device and part you need, then confirm the supply details before proceeding.</p></div>
+    <div class="process-grid">
+      <div class="process-card reveal"><div class="process-no">01 / REQUEST</div><h3>Tell us the part</h3><p>Share brand, exact model, component and quantity.</p></div>
+      <div class="process-card reveal"><div class="process-no">02 / CHECK</div><h3>Confirm availability</h3><p>Review the relevant part requirement and available option.</p></div>
+      <div class="process-card reveal"><div class="process-no">03 / AGREE</div><h3>Confirm supply</h3><p>Discuss grade, quantity, pricing and business terms.</p></div>
+      <div class="process-card reveal"><div class="process-no">04 / ARRANGE</div><h3>Arrange the order</h3><p>Proceed with the agreed supply and delivery arrangement.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     B2B
+========================================================== -->
+<section class="section b2b" id="wholesale">
+  <div class="container b2b-layout">
+    <div class="b2b-copy reveal"><div class="eyebrow">B2B Supply</div><h2>Built for businesses that cannot afford sourcing confusion.</h2><p>VOLTARA is structured for mobile repair professionals who need clear part identification, straightforward enquiries and a supply conversation based on their actual requirements.</p><div class="b2b-list"><div><i class="fa-solid fa-check"></i><span>Model-specific part enquiries</span></div><div><i class="fa-solid fa-check"></i><span>Wholesale quantity discussions</span></div><div><i class="fa-solid fa-check"></i><span>Part grade and compatibility conversations</span></div><div><i class="fa-solid fa-check"></i><span>Professional support for repeat requirements</span></div></div></div>
+    <div class="enquiry-panel reveal"><h3>Wholesale Enquiry</h3><p>For shops, repair centres, technicians and professional buyers with recurring or bulk requirements.</p><div class="enquiry-links"><a class="enquiry-link" href="#request"><i class="fa-solid fa-boxes-stacked"></i> Bulk / wholesale parts request</a><a class="enquiry-link" href="#request"><i class="fa-solid fa-repeat"></i> Repeat supply requirement</a><a class="enquiry-link" href="#request"><i class="fa-solid fa-screwdriver-wrench"></i> Technical part identification</a></div></div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SUPPLY COVERAGE
+========================================================== -->
+<section class="section" id="coverage">
+  <div class="container">
+    <div class="section-heading reveal"><div class="eyebrow">Supply Focus</div><h2>Designed around the UAE mobile repair market.</h2><p>The site keeps the business model flexible so a real supplier can later add confirmed service areas, delivery options, working hours and contact details.</p></div>
+    <div class="coverage">
+      <div class="coverage-card reveal"><i class="fa-solid fa-store"></i><h3>Mobile Shops</h3><p>Support retail businesses that need parts for customer repairs and service requirements.</p></div>
+      <div class="coverage-card reveal"><i class="fa-solid fa-building"></i><h3>Repair Centres</h3><p>Handle recurring requirements across multiple device models and repair jobs.</p></div>
+      <div class="coverage-card reveal"><i class="fa-solid fa-user-gear"></i><h3>Technicians</h3><p>Make model-specific component enquiries without searching through a generic catalogue.</p></div>
+    </div>
+    <p class="notice">Final UAE coverage, delivery zones, pickup arrangements, payment methods and operating hours should be replaced with the real supplier's confirmed details.</p>
+  </div>
+</section>
 
 <!-- =========================================================
      QUALITY / ABOUT
@@ -3765,6 +3401,10 @@
                         Cameras
                     </a>
 
+                    <a href="#products">
+                        IC &amp; Board Parts
+                    </a>
+
                 </div>
 
             </div>
@@ -3785,6 +3425,10 @@
 
                     <a href="#solutions">
                         Solutions
+                    </a>
+
+                    <a href="#wholesale">
+                        Wholesale
                     </a>
 
                     <a href="#brands">
@@ -4026,87 +3670,34 @@
     /* =========================================================
        PART REQUEST FORM
     ========================================================== */
+    const partForm = document.getElementById("partForm");
+    partForm.addEventListener("submit", function(event) {
+        event.preventDefault();
 
-    const partForm =
-        document.getElementById(
-            "partForm"
-        );
+        const brand = document.getElementById("brand").value;
+        const model = document.getElementById("model").value.trim();
+        const part = document.getElementById("part").value.trim();
+        const grade = document.getElementById("grade").value || "Not specified";
+        const quantity = document.getElementById("quantity").value.trim() || "Not specified";
+        const business = document.getElementById("business").value.trim() || "Not specified";
 
+        const message = [
+            "VOLTARA PART / WHOLESALE ENQUIRY",
+            "",
+            `Brand: ${brand}`,
+            `Model: ${model}`,
+            `Part Required: ${part}`,
+            `Part Grade: ${grade}`,
+            `Quantity: ${quantity}`,
+            `Business Type: ${business}`,
+            "",
+            "Please confirm availability, suitable option and wholesale pricing."
+        ].join("\n");
 
-    partForm.addEventListener(
-        "submit",
-        function(event) {
-
-            event.preventDefault();
-
-
-            const brand =
-                this.querySelector(
-                    "select"
-                ).value;
-
-
-            const inputs =
-                this.querySelectorAll(
-                    "input"
-                );
-
-
-            const model =
-                inputs[0].value;
-
-
-            const part =
-                inputs[1].value;
-
-
-            const quantity =
-                inputs[2].value;
-
-
-            const message =
-
-                `Hello VOLTARA,%0A%0A` +
-
-                `I would like to enquire about a mobile spare part.%0A%0A` +
-
-                `Brand: ${encodeURIComponent(brand)}%0A` +
-
-                `Model: ${encodeURIComponent(model)}%0A` +
-
-                `Part Required: ${encodeURIComponent(part)}%0A` +
-
-                `Quantity: ${
-                    encodeURIComponent(
-                        quantity ||
-                        "Not specified"
-                    )
-                }`;
-
-
-            /*
-             * DEMO WHATSAPP NUMBER
-             *
-             * Replace this with the
-             * actual client's UAE number.
-             */
-
-            const whatsappNumber =
-                "971500000000";
-
-
-            window.open(
-
-                `https://wa.me/${whatsappNumber}?text=${message}`,
-
-                "_blank"
-
-            );
-
-        }
-    );
-
-
+        /* Replace with the real client's UAE WhatsApp number. */
+        const whatsappNumber = "971500000000";
+        window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, "_blank");
+    });
 </script>
 
 
